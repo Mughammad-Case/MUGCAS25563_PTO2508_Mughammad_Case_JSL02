@@ -29,3 +29,11 @@ while (
   alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
   task2Status = prompt("Enter task 2 status 'todo', 'doing', or 'done':");
 }
+
+// Log task title and status to console if status is 'done'
+if (task1Status === "done") {
+  console.log("Title:", task1Title, ", status:", task1Status);
+}
+if (task2Status === "done") {
+  console.log("Title:", task2Title, ", status:", task2Status);
+}
