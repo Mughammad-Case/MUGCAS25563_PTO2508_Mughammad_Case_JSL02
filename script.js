@@ -3,6 +3,8 @@ const task1Title = prompt("Enter task 1 title:");
 const task1Description = prompt("Enter task 1 description:");
 
 let task1Status = prompt("Enter task 1 status 'todo', 'doing', or 'done':");
+
+// Validate task 1 status input
 while (
   task1Status !== "todo" &&
   task1Status !== "doing" &&
@@ -15,3 +17,15 @@ while (
 // Prompt user for task 2 title and description
 const task2Title = prompt("Enter task 2 title:");
 const task2Description = prompt("Enter task 2 description:");
+
+let task2Status = prompt("Enter task 2 status 'todo', 'doing', or 'done':");
+
+// Validate task 2 status input
+while (
+  task2Status !== "todo" &&
+  task2Status !== "doing" &&
+  task2Status !== "done"
+) {
+  alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+  task2Status = prompt("Enter task 2 status 'todo', 'doing', or 'done':");
+}
